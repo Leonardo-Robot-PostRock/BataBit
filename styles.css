@@ -267,7 +267,7 @@ main {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.7rem;
-    color: var(#757575)
+    color: #757575;
 }
 
 .currency-table-container .down,
