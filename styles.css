@@ -160,7 +160,6 @@ main {
     width: 70%;
     min-width: 235px;
     max-width: 500px;
-    height: 360px;
     margin: 0 auto;
     font-family: "Inter", sans-serif;
 }
@@ -290,8 +289,29 @@ main {
     background-image: url("./assets/icons/trending-up.svg");
 }
 
-.currency-table--date {
-    width: 190px;
+.currency-table--date,
+.commission-table--date {
+    width: 50%;
+    min-width: 200px;
     height: 30px;
-    margin: 0 auto;
+    margin: 15px auto 0;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.currency-table--date {
+    background-color: var(--soft-orange);
+}
+
+.commission-table--date {
+    background-color: #E7F5FF;
+}
+
+.currency-table--date p,
+.commission-table--date p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warm-black);
+    margin-bottom: 0;
 }
