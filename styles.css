@@ -178,7 +178,8 @@ main {
 
 .main-currency-table .currency-table--title,
 .main-commission-table .commission-table--title {
-    margin-bottom: 0;
+    padding-bottom: 15px;
+    text-align: start;
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 2.3rem;
@@ -232,9 +233,12 @@ main {
     height: 100%;
 }
 
+
+
 .currency-table-container td,
 .commission-table-container td {
     width: 50%;
+    text-align: start;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.9rem;
