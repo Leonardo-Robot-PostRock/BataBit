@@ -464,20 +464,30 @@ main {
     color: #757575;
 }
 
-.plans-container--card {
+.plans-container--card,
+.unlimited-container--card {
     position: relative;
     width: 70%;
     min-width: 230px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 0;
+    margin: 50px auto 0px;
     padding: 0 15px;
-    background-color: var(--just-white);
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(80, 73, 30, 0.16);
+    box-shadow: 0 4px 8px rgba(80, 73, 30, 1);
 }
 
-.recommended {
+.plans-container--card {
+    background-color: var(--just-white);
+}
+
+.unlimited-container--card {
+    background-color: var(--black);
+}
+
+.recommended,
+.basic,
+.unlimited {
     position: absolute;
     width: 120px;
     height: 31px;
@@ -485,55 +495,108 @@ main {
     top: -15px;
     left: calc(50% - 60px);
     font-size: 1.2rem;
-    background-color: var(--bitcoin-orange);
     border-radius: 8px;
-    color: var(--just-white);
 }
 
-.plan-card--title {
+.recommended {
+    color: var(--just-white);
+    background-color: var(--bitcoin-orange);
+}
+
+.basic {
+    color: var(--just-white);
+    background-color: var(--secondary-blue);
+}
+
+.unlimited {
+    color: var(--warm-black);
+    background-color: var(--gray);
+}
+
+.plan-card--title,
+.unlimited-card--title {
     padding-top: 30px;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
+}
+
+.plan-card--title {
     color: black;
 }
 
-.plan-card--price {
+.unlimited-card--title {
+    color: var(--gray);
+}
+
+.plan-card--price,
+.unlimited-card--price {
     position: relative;
     padding: 5px 0;
     font-size: 5.2rem;
     line-height: 5.3rem;
+}
+
+.plan-card--price {
     color: black
+}
+
+.unlimited-card--price {
+    color: var(--just-white)
+}
+
+.plan-card--price span,
+.unlimited-card--price span {
+    bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 .plan-card--price span {
     position: absolute;
     left: calc(50% - 45px);
-    bottom: 20px;
-    font-size: 1.2rem;
-    font-weight: 300;
-
 }
 
-.plan-card--saving {
+.unlimited-card--price span {
+    position: absolute;
+    left: calc(50% - 52px);
+}
+
+.plan-card-saving,
+.unlimited-card-saving {
     font-size: 1.2rem;
 }
 
-.plan-card-ca {
+.unlimited-card-saving {
+    color: var(--gray);
+}
+
+
+.plan-card-ca,
+.unlimited-card-ca {
     width: 150px;
     height: 48px;
     margin-top: 20px;
-    background-color: #faf8f7;
     border: 2px solid var(--bitcoin-orange);
     border-radius: 4px;
     font-family: 'DM Sans', sans-serif;
     font-size: 1.4rem;
     font-weight: bold;
     line-height: 1.8rem;
-    color: var(--black);
 }
 
-.plan-card-ca span {
+.plan-card-ca {
+    color: var(--black);
+    background-color: #faf8f7;
+}
+
+.unlimited-card-ca {
+    background-color: var(--black);
+    color: var(--just-white)
+}
+
+.plan-card-ca span,
+.unlimited-card-ca span {
     display: inline-block;
     width: 20px;
     height: 20px;
