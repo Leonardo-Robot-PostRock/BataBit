@@ -1,3 +1,7 @@
+.bitcoin-img-container {
+    background-image: url("../assets/imgs/bitcoinbaby2x.webp");
+}
+
 .product-cards--container {
     display: flex;
     flex-wrap: wrap;
