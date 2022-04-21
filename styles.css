@@ -477,10 +477,10 @@ main {
     position: relative;
     scroll-snap-align: center;
     width: 70%;
-    min-width: 230px;
+    min-width: 220px;
     max-width: 300px;
     height: 250px;
-    margin: 50px 20px 0px;
+    margin: 50px 5px 0;
     padding: 0 15px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(80, 73, 30, 1);
@@ -601,7 +601,7 @@ main {
 
 .unlimited-card-ca {
     background-color: var(--black);
-    color: var(--just-white)
+    color: var(--just-white);
 }
 
 .plan-card-ca span,
@@ -612,4 +612,35 @@ main {
     background-image: url("./assets/icons/orange-right-arrow.svg");
     margin-left: 6px;
     vertical-align: text-bottom;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    min-width: 320px;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+
+footer section {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .left ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+
+.left li {
+    margin: 10px 0;
+}
+
+.left a {
+    text-decoration: none;
+    color: var(--just-white);
 }
